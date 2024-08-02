@@ -112,66 +112,20 @@ body, html {
   text-align: center;
 }
 
-.sm1 {
-  background-color: rgba(0,0,0, 0.4);
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  border: 2px solid #f1f1f1;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 400px;
-  padding: 1%;
-  text-align: center;
+.button2 {
+    transition: all .4s ease;
+    color: #fff;
+    border: 2px solid white;
+    text-align: center;
+    line-height: 1;
+    font-size: 30px;
+    background-color : rgba(0,0,0, 0.4);
+    padding: 20px;
+    outline: none;
+    border-radius: 40px;
+	width: 200px;
 }
-
-.sm2 {
-  background-color: rgba(0,0,0, 0.4);
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  border: 2px solid #f1f1f1;
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 400px;
-  padding: 1%;
-  text-align: center;
-}
-
-.sm3 {
-  background-color: rgba(0,0,0, 0.4);
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  border: 2px solid #f1f1f1;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 400px;
-  padding: 1%;
-  text-align: center;
-}
-
-.sm4 {
-  background-color: rgba(0,0,0, 0.4);
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  border: 2px solid #f1f1f1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 400px;
-  padding: 1%;
-  text-align: center;
+.button2:hover {
+    color: #001F3F;
+    background-color: #fff;
 }
