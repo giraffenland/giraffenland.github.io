@@ -1,6 +1,7 @@
 @font-face {
    font-family: font;
    src: url(Roboto-Light.ttf);
+   font-display:swap;
 }
 
 * {
@@ -48,7 +49,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
+  background-color: #222;
   min-width: 10px;
   z-index: 1;
 }
@@ -112,6 +113,22 @@ body, html {
   text-align: center;
 }
 
+.bg-text2 {
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border: 4px solid #ff0000;
+  position: fixed;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 35%;
+  padding: 1%;
+  text-align: center;
+}
+
 .button2 {
     transition: all .3s ease;
     color: #fff;
@@ -156,9 +173,9 @@ a:active {
 .yt-iframe {
   position: absolute;
   top: 0;
-  left: 15%;
+  left: 10%;
   bottom: 0;
   right: 0;
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   border: none;
