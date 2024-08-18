@@ -89,12 +89,12 @@ body, html {
   background-size: cover;
 }
 
-.img1 { background-image: url("7.webp"); }
-.img2 { background-image: url("2.webp"); }
+.img1 { background-image: url("7.avif"); }
+.img2 { background-image: url("2.avif"); }
 .img3 { background-image: url("1.jpg"); }
-.img4 { background-image: url("4.webp"); }
-.img5 { background-image: url("5.webp"); }
-.img6 { background-image: url("3.jpg"); }
+.img4 { background-image: url("4.avif"); }
+.img5 { background-image: url("5.avif"); }
+.img6 { background-image: url("3.avif"); }
 .img7 { background-image: url("6.jpg"); }
 
 .bg-text {
