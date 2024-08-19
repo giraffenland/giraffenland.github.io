@@ -7,14 +7,10 @@
 * {
    font-family: font;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  }
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(0,0,0, 0.5);
 }
 
 .navbar a {
@@ -49,7 +45,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #222;
+  background-color: rgba(0,0,0, 0.5);
   min-width: 10px;
   z-index: 1;
 }
@@ -75,6 +71,8 @@ body, html {
   height: 100%;
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  }
 }
 
 * {
@@ -99,10 +97,9 @@ body, html {
 
 .bg-text {
   background-color: rgba(0,0,0, 0.4);
-  color: white;
   font-weight: bold;
   font-size: 60px;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #fff;
   position: fixed;
   top: 55%;
   left: 50%;
