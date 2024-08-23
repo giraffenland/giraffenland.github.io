@@ -90,8 +90,9 @@ body, html {
     border-radius: 40px;
 	width: 200px;
 }
-.button2:hover {
-    background-color: #0073e6;
+
+.b2:hover {
+    background-color: #0066cc;
 }
 
 a {
