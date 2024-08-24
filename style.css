@@ -36,7 +36,7 @@
   background-color: inherit;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+.navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover, .b2:hover {
   background-color: #0066cc;
 }
 
@@ -64,21 +64,6 @@ body, html {
   color: #fff;
   }
 
-.bg-image {
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img1 { background-image: url("1.webp"); }
-.img2 { background-image: url("2.avif"); }
-.img3 { background-image: url("7.avif"); }
-.img4 { background-image: url("4.avif"); }
-.img5 { background-image: url("5.avif"); }
-.img6 { background-image: url("3.avif"); }
-.img7 { background-image: url("6.jpg"); }
-
 .b2 {
     transition: all .3s ease;
     border: 2px solid white;
@@ -89,10 +74,6 @@ body, html {
     padding: 20px;
     border-radius: 40px;
 	width: 200px;
-}
-
-.b2:hover {
-    background-color: #0066cc;
 }
 
 a {
