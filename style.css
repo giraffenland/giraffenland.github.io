@@ -11,7 +11,7 @@
 
 .navbar {
   overflow: hidden;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: #00000080;
 }
 
 .navbar a {
@@ -37,13 +37,13 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover, .b2:hover {
-  background-color: #0066cc;
+  background-color: #06c;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: #00000080;
 }
 
 .dropdown-content a {
@@ -59,18 +59,18 @@
 
 body, html {
   height: 100%;
-  margin: 0%;
+  margin: 0;
   font-family: Arial, sans-serif;
   color: #fff;
   }
 
 .b2 {
     transition: all .3s ease;
-    border: 2px solid white;
+    border: 2px solid #fff;
     text-align: center;
     line-height: 1;
     font-size: 28px;
-    background-color : rgba(0,0,0, 0.4);
+    background-color : #0006;
     padding: 20px;
     border-radius: 40px;
 	width: 200px;
@@ -97,3 +97,4 @@ a {
   width: 80%;
   height: 80%;
   border: none;
+}
