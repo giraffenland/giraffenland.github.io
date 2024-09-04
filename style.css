@@ -80,21 +80,3 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
-.ytC {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-
-.yt-iframe {
-  position: absolute;
-  top: 0;
-  left: 10%;
-  bottom: 0;
-  right: 0;
-  width: 80%;
-  height: 80%;
-  border: none;
-}
