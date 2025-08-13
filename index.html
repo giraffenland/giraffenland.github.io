@@ -8,10 +8,7 @@
 <title>Willkommen auf Giraw</title>
 <style>
 body {
-		margin: 0;
 		background-color: #000;
-        height: 100vh;
-        position: relative;
     }
     .welcome {
 		font-size: 40px;
@@ -21,34 +18,20 @@ body {
         width: 80%;
         max-width: 1050px;
         position: fixed;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-	
-    .news {
-		font-size: 40px;
-        border: 3px solid #f00;
-        background-color: rgba(0,0,0, 0.4);
-        text-align: center;
-        width: 80%;
-        max-width: 1050px;
-        position: fixed;
-        top: 60%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
 .background {
-    width: 100%;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.img1 { background-image: url('3.avif'); }
-.img2 { background-image: url('7.avif'); }
+.img1 { background-image: url('7.avif'); }
+.img2 { background-image: url('3.avif'); }
 .img3 { background-image: url('1.webp'); }
 .img4 { background-image: url('4.avif'); }
 
@@ -56,23 +39,13 @@ body {
     .background {
         height: calc(100vh / 4);
     }
-    .welcome p {
-        font-size: 30px;
-    }
-}
-img {
-  display: block;
-  margin: auto;
 }
 </style>
 </head>
 <body>
-
 <common-navbar></common-navbar>
 
-<div class="welcome"><p>Willkommen auf der Giraw Website.</p></div>
-
-<div class="news"><p><a href="civilization.html">Hier gibt es die neuesten Infos zum Civilization Event!</a></p></div>
+<div class="welcome"><p>Willkommen auf der Giraw Website.<p><a href="civilization.html"><u>Hier gibt es die neuesten Infos zum Civilization Event!</u></a></p></div>
 
 <div class="background img1"></div>
 <div class="background img2"></div>
@@ -82,7 +55,4 @@ img {
 <common-footer></common-footer>
 <script src="common.js"></script>
 </body>
-
 </html>
-
-
