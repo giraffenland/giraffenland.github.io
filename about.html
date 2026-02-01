@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Giraw | Über Uns</title>
+    <style>
+        body {
+            background-image: url('2.avif');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .header-content {
+            text-align: center;
+            margin-top: 80px; /* Ersetzt <br><br> */
+        }
+
+        h1 {
+            margin: 30px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+            gap: 30px;
+            justify-content: center;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        .card {
+            padding: 2em;
+            border: 1px solid #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 1279px) {
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                padding: 4px;
+            }
+            .card {
+                padding: 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <common-navbar></common-navbar>
+
+    <div class="header-content">
+        <h1>Über Uns</h1>
+        <h3>Hier möchten wir kurz unser Giraffenland Team vorstellen.</h3>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Lukas</h2>
+            <p>Hi ich bin Lukas und ich bin der Co-Owner von Giraffenland. Ich bin hauptsächlich für die Redstone- und Commandblocktechnik verantwortlich und kümmere mich drum, dass den Spielern ein wundervolles Erlebnis, was ohne Technik nicht möglich wäre, zu bieten.</p>
+        </div>
+        <div class="card">
+            <h2>Christian</h2>
+            <p>Hallo ich bin Christian und ich bin zwar nicht der stille Boss, aber trotzdem ein Führungsmitglied (mit-Owner) bei dem Team von Giraffenland. Ich bin schon ewig auf Giraffenland dabei, daher habe ich im Laufe der Zeit gut Erfahrung aufgebaut.</p>
+        </div>
+        <div class="card">
+            <h2>Philipp</h2>
+            <p>Hallo, ich bin Philipp. Ich bin ein Giraffendesigner! Ich helfe bei den Bauprojekten mit. Ich bin froh, dass ich ein Giraffendesigner bin!</p>
+        </div>
+        <div class="card">
+            <h2>Mattis</h2>
+            <p>Hallo, ich bin Mattis und ich bin Giraffenland Moderator. Ich bin zwar kein Builder, baue jedoch gerne an Welten oder spiele mit in Szenen für unsere sozialen Medien. Ich gestalte gerne Projekte im Hintergrund mit.</p>
+        </div>
+        <div class="card">
+            <h2>Thomas</h2>
+            <p>Hallo, ich bin Thomas, Mitinhaber und Teil des Führungsteams von Giraffenland. Seit der Gründung von Giraffenland bin ich mit dabei und habe im Laufe der Jahre viel Erfahrung gesammelt.</p>
+        </div>
+        <div class="card">
+            <h2>Greey</h2>
+            <p>Ich bin Greey – eines der ältesten Mitglieder im Mod-Team. Freundlich? Ja. Streng? Auch. Mein Motto: Erst mal alle bannen … und dann doch leben lassen.</p>
+        </div>
+        <div class="card">
+            <h2>Flavio</h2>
+            <p>Giraffenmod</p>
+        </div>
+        <div class="card">
+            <h2>Dennis</h2>
+            <p>Dennis ist unser fleißigster Builder. So fleißig, dass er bisher noch nicht dazu kam, eine eigene Beschreibung zu formulieren.</p>
+        </div>
+        <div class="card">
+            <h2>Sascha</h2>
+            <p>Giraffendesigner</p>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+</body>
+</html>
