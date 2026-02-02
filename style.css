@@ -44,7 +44,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
-    padding: 8px 20px;
+    padding: 0px 20px;
     display: flex;
     align-items: center;
 }
@@ -58,4 +58,17 @@ body {
 .navbar-text {
     font-size: 16px;
     color: #fff;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    flex: 1;
+}
+
+.discord-link {
+    margin-left: auto;
 }
