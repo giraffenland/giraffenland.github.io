@@ -3,114 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="icon.webp">
-	<link rel="preload" href="style.css" as="style">
-	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
     <title>Giraw | Über Uns</title>
     <style>
         body {
-			background-image: url('2.avif');
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: center;
-			min-height: 100vh;
-}
+            background: url('2.avif') fixed center/cover;
+            min-height: 100vh;
+        }
 
         .header-content {
             text-align: center;
-            margin-top: 80px;
-        }
-
-        h1 {
-            margin: 30px 0;
+            margin: 80px 0 30px;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
-            gap: 30px;
-            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
             padding: 30px;
+            max-width: 1590px;
+            margin: 0 auto;
             line-height: 1.6;
         }
 
         .card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
             padding: 2em;
-            border: 1px solid #fff;
-            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid #fff;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
         }
 
-        @media (max-width: 1279px) {
-            .grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                padding: 4px;
-            }
-            .card {
-                padding: 0.5em;
-            }
+        .card-img {
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .name-label {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .badge {
+            padding: 2px 12px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            white-space: nowrap;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Rollen-Farben */
+        .bg-gott    { background: #f5bd25; }
+        .bg-vize    { background: #907575; }
+        .bg-mod     { background: #de995c; }
+        .bg-cartist { background: #992d22; }
+        .bg-artist  { background: #aa3b3b; }
+
+        @media (max-width: 1000px) {
+            .grid { grid-template-columns: 1fr; max-width: 600px; }
+            .card { flex-direction: column; text-align: center; }
+            .card-header { justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-        <nav class="navbar">
-            <div class="nav-links">
-                <a href="index.html"><img src="icon.webp" alt="Home"></a>
-                <a href="https://www.instagram.com/giraffenland.offical" target="_blank"><img src="insta.webp" alt="Instagram"></a>
-                <a href="https://www.tiktok.com/@giraffenteam" target="_blank"><img src="tiktok.webp" alt="TikTok"></a>
-                <a href="https://www.youtube.com/@giraffenlanddc" target="_blank"><img src="yt.webp" alt="YouTube"></a>
-                <a href="about.html"><img src="team.webp" alt="Über Uns"></a>
-				<a href="https://discord.gg/Tkn83H6uQ5" target="_blank" class="discord-link"><img src="dc.webp" alt="Discord"></a>
-            </div>
-            <span class="navbar-text">© 2026 TeamGiraw | Mattis</span>
-        </nav>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html"><img src="icon.webp" alt="Home"></a>
+            <a href="https://www.instagram.com/giraffenland.offical" target="_blank"><img src="insta.webp"></a>
+            <a href="https://www.tiktok.com/@giraffenteam" target="_blank"><img src="tiktok.webp"></a>
+            <a href="https://www.youtube.com/@giraffenlanddc" target="_blank"><img src="yt.webp"></a>
+            <a href="about.html"><img src="team.webp" alt="Über Uns"></a>
+            <a href="https://discord.gg/Tkn83H6uQ5" target="_blank" class="dc"><img src="dc.webp"></a>
+        </div>
+        <span class="navbar-text">© 2026 TeamGiraw | Mattis</span>
+    </nav>
 
-    <div class="header-content">
+    <header class="header-content">
         <h1>Über Uns</h1>
-        <h3>Hier stellen wir euch kurz unser Giraffenland Team vor.</h3>
-    </div>
+        <h3>Hier stellen wir euch kurz unser Giraw Team vor.</h3>
+    </header>
 
-    <div class="grid">
-        <div class="card">
-            <h2>Lukas | Giraffenvize, Coding</h2>
-            <p>Hi ich bin Lukas und ich bin der Co-Owner von Giraffenland. Ich bin hauptsächlich für die Redstone- und Commandblocktechnik verantwortlich und kümmere mich drum, dass den Spielern ein wundervolles Erlebnis, was ohne Technik nicht möglich wäre, zu bieten.</p>
-        </div>
-        <div class="card">
-            <h2>Christian | Owner, Giraffengott</h2>
-            <p>Hallo ich bin Christian und ich bin zwar nicht der stille Boss, aber trotzdem ein Führungsmitglied (mit-Owner) bei dem Team von Giraffenland. Ich bin schon ewig auf Giraffenland dabei, daher habe ich im Laufe der Zeit gut Erfahrung aufgebaut.</p>
-        </div>
-		<div class="card">
-            <h2>Thomas | Owner, Giraffengott</h2>
-            <p>Hallo, ich bin Thomas, Mitinhaber und Teil des Führungsteams von Giraffenland. Seit der Gründung von Giraffenland bin ich mit dabei und habe im Laufe der Jahre viel Erfahrung gesammelt.</p>
-        </div>
-        <div class="card">
-            <h2>Flavio | Mod, Aufgabenmanagement</h2>
-            <p>Hallo, ich bin Flavio. Ich bin Moderator im Giraffenland und kümmere mich hauptsächlich darum, dass die anderen ordentlich was zu ackern haben. Für einige bin ich während der Arbeit außerdem so etwas wie eine mentale Stütze.</p>
-        </div>
-		<div class="card">
-            <h2>Maxi | Coding</h2>
-            <p>Moin, ich bin Maxi. Bei Giraw bin ich Moderator und helfe hauptsächlich beim coden. Zudem springe ich auch in verschiedenen Aufgaben ein, wenn jemand ausfallen sollte oder im Allgemeinen Hilfe gebraucht wird in einem Bereich, wo ich dementsprechend mitwirken könnte.</p>
-        </div>
-        <div class="card">
-            <h2>Mattis | Giraffenartist</h2>
-            <p>Hallo, ich bin Mattis und ich bin Giraffenartist. Ich kümmere mich um die Internetpräsenz von Giraw, damit Interessierte unseren Discord sowie Social Media finden. In meiner Freizeit koche ich gerne und teile Essensbilder, die andere als ihre Werke teilen.</p>
-        </div>
-        <div class="card">
-            <h2>Greey | Giraffenmod</h2>
-            <p>Ich bin Greey – eines der ältesten Mitglieder im Mod-Team. Freundlich? Ja. Streng? Auch. Mein Motto: Erst mal alle bannen … und dann doch leben lassen.</p>
-        </div>
-        <div class="card">
-            <h2>Dennis | Giraffenartist</h2>
-            <p>Dennis ist unser fleißigster Builder. So fleißig, dass er bisher noch nicht dazu kam, eine eigene Beschreibung zu formulieren.</p>
-        </div>
-    </div>
+    <main class="grid">
+        <article class="card">
+            <img src="img/chg.webp" class="card-img" alt="chg" loading="lazy">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">chg</span>
+                    <span class="badge bg-gott">Giraffengott</span>
+                </div>
+                <p>Ich bin zwar nicht der stille Boss, aber trotzdem ein Führungsmitglied (mit-Owner) bei dem Team von Giraffenland. Ich bin schon ewig auf Giraffenland dabei, daher habe ich im Laufe der Zeit gut Erfahrung aufgebaut.</p>
+            </div>
+        </article>
 
-<center><h3>Wir danken allen vorherigen Teammitgliedern für ihre Beiträge.</h3></center>
-	
+        <article class="card">
+            <img src="img/Hima.webp" class="card-img" alt="trghv">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">trghv</span>
+                    <span class="badge bg-gott">Giraffengott</span>
+                </div>
+                <p>Ich bin Mitinhaber und Teil des Führungsteams von Giraffenland. Seit der Gründung von Giraffenland bin ich mit dabei und habe im Laufe der Jahre viel Erfahrung gesammelt.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Ender.webp" class="card-img" alt="Ender">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Ender</span>
+                    <span class="badge bg-vize">Giraffenvize</span>
+                </div>
+                <p>Ich bin hauptsächlich für die Redstone- und Commandblocktechnik verantwortlich und kümmere mich drum, dass den Spielern ein wundervolles Erlebnis bietet.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Flyx.webp" class="card-img" alt="Flyx">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Flyx</span>
+                    <span class="badge bg-mod">Giraffenmod</span>
+                </div>
+                <p>Ich kümmere mich hauptsächlich darum, dass die anderen ordentlich was zu ackern haben. Für einige bin ich während der Arbeit eine mentale Stütze.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Evyhll.webp" class="card-img" alt="Evyhll">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Evyhll</span>
+                    <span class="badge bg-mod">Giraffenmod</span>
+                </div>
+                <p>Ich helfe hauptsächlich beim coden. Zudem unterstützte ich das Team bei verschiedenen Aufgaben, wenn Hilfe gebraucht wird.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Greey1.webp" class="card-img" alt="Greey1">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Greey1</span>
+                    <span class="badge bg-mod">Giraffenmod</span>
+                </div>
+                <p>Eines der ältesten Mitglieder im Mod-Team. Freundlich? Ja. Streng? Auch. Mein Motto: Erst mal alle bannen … und dann doch leben lassen.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Axo.webp" class="card-img" alt="Axo">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">einfach_Axo</span>
+                    <span class="badge bg-cartist">C-Giraffenartist</span>
+                </div>
+                <p>Axo leitet unseren Baubereich und verbringt die meiste Zeit damit, riesige Welten zu erschaffen.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Dampfnudel.webp" class="card-img" alt="Dampfnudel">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Dampfnudel</span>
+                    <span class="badge bg-artist">Giraffenartist</span>
+                </div>
+                <p>Ich entwerfe und erstelle die Modelle für verschiedenste Events. Alles was ihr dort seht, stammt aus meiner Hand.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/joerdi.webp" class="card-img" alt="joerdi">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">joerdi</span>
+                    <span class="badge bg-artist">Giraffenartist</span>
+                </div>
+                <p>Schreib mal was</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/Mattis.webp" class="card-img" alt="Mattis">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Mattis</span>
+                    <span class="badge bg-artist">Giraffenartist</span>
+                </div>
+                <p>Ich kümmere mich um die Internetpräsenz von Giraw. In meiner Freizeit koche ich gerne und teile Essensbilder.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer style="text-align: center; padding: 20px 0 40px;">
+        <h3>Wir danken allen vorherigen Teammitgliedern für ihre Beiträge.</h3>
+    </footer>
+
 </body>
 </html>
-
-
-
-
-
