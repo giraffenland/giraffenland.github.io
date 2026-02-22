@@ -10,6 +10,8 @@
         body {
             background: url('2.avif') fixed center/cover;
             min-height: 100vh;
+            margin: 0;
+            color: #fff;
         }
 
         .header-content {
@@ -59,20 +61,36 @@
         }
 
         .badge {
+            display: inline-flex;
+            align-items: center;
             padding: 2px 12px;
             border-radius: 30px;
             font-size: 0.9rem;
             font-weight: bold;
             white-space: nowrap;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            height: 24px;
         }
 
-        /* Rollen-Farben */
-        .bg-gott    { background: #f5bd25; }
-        .bg-vize    { background: #907575; }
-        .bg-mod     { background: #de995c; }
+        .badge-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            display: block;
+            transition: transform 0.2s;
+        }
+
+        .badge-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .bg-gott { background: #f5bd25; }
+        .bg-vize { background: #907575; }
+        .bg-mod { background: #de995c; }
         .bg-cartist { background: #992d22; }
-        .bg-artist  { background: #aa3b3b; }
+        .bg-artist { background: #aa3b3b; }
 
         @media (max-width: 1000px) {
             .grid { grid-template-columns: 1fr; max-width: 600px; }
@@ -107,6 +125,7 @@
                 <div class="card-header">
                     <span class="name-label">chg</span>
                     <span class="badge bg-gott">Giraffengott</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich bin zwar nicht der stille Boss, aber trotzdem ein Führungsmitglied (mit-Owner) bei dem Team von Giraffenland. Ich bin schon ewig auf Giraffenland dabei, daher habe ich im Laufe der Zeit gut Erfahrung aufgebaut.</p>
             </div>
@@ -118,6 +137,7 @@
                 <div class="card-header">
                     <span class="name-label">trghv</span>
                     <span class="badge bg-gott">Giraffengott</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich bin Mitinhaber und Teil des Führungsteams von Giraffenland. Seit der Gründung von Giraffenland bin ich mit dabei und habe im Laufe der Jahre viel Erfahrung gesammelt.</p>
             </div>
@@ -129,6 +149,7 @@
                 <div class="card-header">
                     <span class="name-label">Ender</span>
                     <span class="badge bg-vize">Giraffenvize</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich bin hauptsächlich für die Redstone- und Commandblocktechnik verantwortlich und kümmere mich drum, dass den Spielern ein wundervolles Erlebnis bietet.</p>
             </div>
@@ -140,6 +161,7 @@
                 <div class="card-header">
                     <span class="name-label">Flyx</span>
                     <span class="badge bg-mod">Giraffenmod</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich kümmere mich hauptsächlich darum, dass die anderen ordentlich was zu ackern haben. Für einige bin ich während der Arbeit eine mentale Stütze.</p>
             </div>
@@ -151,6 +173,7 @@
                 <div class="card-header">
                     <span class="name-label">Evyhll</span>
                     <span class="badge bg-mod">Giraffenmod</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich helfe hauptsächlich beim coden. Zudem unterstützte ich das Team bei verschiedenen Aufgaben, wenn Hilfe gebraucht wird.</p>
             </div>
@@ -162,6 +185,7 @@
                 <div class="card-header">
                     <span class="name-label">Greey1</span>
                     <span class="badge bg-mod">Giraffenmod</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Eines der ältesten Mitglieder im Mod-Team. Freundlich? Ja. Streng? Auch. Mein Motto: Erst mal alle bannen … und dann doch leben lassen.</p>
             </div>
@@ -173,6 +197,7 @@
                 <div class="card-header">
                     <span class="name-label">einfach_Axo</span>
                     <span class="badge bg-cartist">C-Giraffenartist</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich bin für unseren Baubereich verantwortlich und investiere den größten Teil meiner Zeit in das Erschaffen umfangreicher, detailreicher Landschaften und Szenerien.</p>
             </div>
@@ -184,6 +209,7 @@
                 <div class="card-header">
                     <span class="name-label">Dampfnudel</span>
                     <span class="badge bg-artist">Giraffenartist</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich entwerfe und erstelle die Modelle für verschiedenste Events. Alles was ihr dort seht, stammt aus meiner Hand.</p>
             </div>
@@ -195,6 +221,7 @@
                 <div class="card-header">
                     <span class="name-label">joerdi</span>
                     <span class="badge bg-artist">Giraffenartist</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Schreib mal was</p>
             </div>
@@ -206,8 +233,33 @@
                 <div class="card-header">
                     <span class="name-label">Mattis</span>
                     <span class="badge bg-artist">Giraffenartist</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
                 </div>
                 <p>Ich kümmere mich um die Internetpräsenz von Giraw. In meiner Freizeit koche ich gerne und teile Essensbilder.</p>
+            </div>
+        </article>
+	
+	    <article class="card">
+            <img src="img/Joel.webp" class="card-img" alt="Joel">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Joel</span>
+                    <span class="badge bg-artist">Giraffenartist</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
+                </div>
+                <p>Schreib mal was</p>
+            </div>
+        </article>
+	
+		<article class="card">
+            <img src="img/Mikatchu.webp" class="card-img" alt="Mikatchu">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Mikatchu</span>
+                    <span class="badge bg-artist">Giraffenartist</span>
+                    <a href="#"><img src="link.webp" class="badge-icon" alt="Link"></a>
+                </div>
+                <p>Schreib mal was</p>
             </div>
         </article>
     </main>
@@ -217,5 +269,4 @@
     </footer>
 
 </body>
-
 </html>
