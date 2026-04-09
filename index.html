@@ -3,27 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Giraffenland, Giraw, Minecraft, Roleplay, PvP, Turnier, Preisgeld">
-    <link rel="shortcut icon" type="image/x-icon" href="icon.webp">
-	<link rel="preload" href="style.css" as="style">
-	<link rel="stylesheet" href="style.css">
-    <title>Giraw | Willkommen</title>
+    <title>Giraw</title>
+    <link rel="shortcut icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body, html { height: 100%; margin: 0; overflow-x: hidden; }
+    .outer-frame {
+        min-height: 100vh; width: 100vw; box-sizing: border-box;
+        padding: 5rem 8vw 5vh 8vw;
+        background: linear-gradient(135deg, #4b0082, #b7113a);
+    }
+
+    .bg-container {
+        position: relative; width: 100%; height: 80vh; border-radius: 1.5rem;
+        background: center/cover no-repeat; margin-bottom: 1.5rem; overflow: hidden;
+    }
+
+    .card {
+        position: absolute; top: 20%; right: 10%; max-width: 37.5rem; padding: 2.5rem;
+        background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(0.9375rem);
+        border-radius: 1.5rem; box-shadow: 0 0.9rem 2.8rem rgba(0,0,0,0.4); color: #000;
+    }
+
+    .tags span {
+        background: #C51162; color: #fff; padding: 0.25rem 0.75rem;
+        border-radius: 1.5rem; font-size: 0.9rem; margin: 0 0.75rem 0.8rem 0; display: inline-block;
+    }
+
+    h2 { margin: 0 0 0.8rem; font-size: 2.5rem; }
+    h3 { margin: 0 0 0.7rem; font-size: 1.4rem; }
+    
+    .small { font-size: 1.15rem; color: #222; line-height: 1.4; }
+    
+    #dd { font-size: 1.3rem; color: #222; line-height: 1.4; margin: 2.5rem; }
+
+    .nav-controls {
+        position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
+        display: flex; align-items: center; gap: 1rem; padding: 0.6rem 1rem; 
+        background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(1rem);
+        border-radius: 3rem; box-shadow: 0 0.6rem 2rem rgba(0,0,0,0.2); z-index: 100;
+    }
+
+    .nav-item { 
+        cursor: pointer; display: flex; align-items: center; justify-content: center; 
+        height: 1.3rem; width: 1.3rem;
+    }
+
+    .dot { width: 0.7rem; height: 0.7rem; background: rgba(0,0,0,0.5); border-radius: 50%; }
+    .play-pause-icon { width: 1.3rem; height: 1.3rem; fill: #000; }
+
+    .content-card { background: #fff; border-radius: 1.5rem; box-shadow: 0 0.6rem 2.5rem rgba(0,0,0,0.2);}
+    .content-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .content-text h2 { color: #e61e43; font-weight: 900; font-size: 1.8rem; margin-top: 2.5rem; margin-left: 2.5rem; }
+    .content-image { width: 100%; border-radius: 1.5rem; box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15); }
+
+    @media (max-width: 62.5rem) {
+        .content-layout { grid-template-columns: 1fr; }
+        .card { inset: 10% 5% auto 5%; max-width: none; padding: 1.9rem; }
+    }
+	
+	@media (max-width: 40rem) {
+    #dd {
+        font-size: 1rem,;
+    }
+	.outer-frame {
+    padding: 4rem 0vw 4vh 0vw;
+	}
+	#visual {
+        background-position: left center;
+    }
+	}
+</style>
 </head>
 <body>
 
-        <nav class="navbar">
-            <div class="nav-links">
-                <a href="index.html"><img src="icon.webp" alt="Home"></a>
-                <a href="https://www.instagram.com/giraffenland.offical" target="_blank"><img src="insta.webp"></a>
-                <a href="https://www.tiktok.com/@giraffenteam" target="_blank"><img src="tiktok.webp"></a>
-                <a href="https://www.youtube.com/@giraffenlanddc" target="_blank"><img src="yt.webp"></a>
-                <a href="about.html"><img src="team.webp" alt="Über Uns"></a>
-				<a href="https://discord.gg/Tkn83H6uQ5" target="_blank" class="dc"><img src="dc.webp"></a>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html"><img src="icon.webp" alt="Home"></a>
+            <a href="https://www.instagram.com/giraffenland.offical" target="_blank"><img src="insta.webp"></a>
+            <a href="https://www.tiktok.com/@giraffenteam" target="_blank"><img src="tiktok.webp"></a>
+            <a href="https://www.youtube.com/@giraffenlanddc" target="_blank"><img src="yt.webp"></a>
+            <a href="about.html"><img src="team.webp" alt="Über Uns"></a>
+            <a href="https://discord.gg/Tkn83H6uQ5" target="_blank" class="dc"><img src="dc.webp"></a>
+        </div>
+        <span class="navbar-text">© 2026 TeamGiraw | Mattis</span>
+    </nav>
+
+    <div class="outer-frame" id="frame">
+        <div class="bg-container" id="visual">
+            <div class="card">
+                <h2 id="t"></h2>
+                <div class="tags" id="tg"></div>
+                <h3 id="st"></h3>
+                <p class="small" id="desc"></p>
             </div>
-            <span class="navbar-text">© 2026 TeamGiraw | Mattis</span>
-        </nav>
+            <div class="nav-controls" id="nav"></div>
+        </div>
 
-    <div class="bg"></div>
+        <div class="content-card">
+            <div class="content-layout">
+                <div class="content-text">
+                    <h2 id="dt">Hilf dem Osterhasen!</h2>
+                    <div id="dd">
+                        <p>Der Osterhase hat auf dem Weg nach Hause seine Ostereier verloren. In der Lobby wartet er auf Hilfe, um sie wieder einzusammeln. Hilf ihm und erhalte einen Finderlohn, indem du deine erste Aufgabe abschließt!</p>
+                    </div>
+                </div>
+                <img src="bg.webp" id="di" class="content-image" alt="Content">
+            </div>
+        </div>
+    </div>
 
+<script>
+    const slides = [
+        {
+            bg: "1.webp",
+            t: "Frühlingsupdate", tg: ["MELMAN", "LOBBY"],
+            st: "Erkunde unser Frühlingsupdate!",
+            d: "Erkunde unser Frühlingsupdate, lerne Melman kennen und hilf ihm dabei, die Aufgaben in der Server-Lobby auf Giraw.de zu übernehmen."
+        },
+        {
+            bg: "2.webp",
+            t: "Melman", tg: ["LINK", "LEADERBOARD", "AURELIS", "SHOP"],
+            st: "Melman's Strandbar",
+            d: "Besuche Melmans Strandbar und verlinke dein Discord mit deinem Minecraft Account. Sammel Aurelis, um dir einen höheren Platz im Leaderboard zu verschaffen oder gib sie für Cosmetics in der Lobby aus."
+        },
+        {
+            bg: "3.webp",
+            t: "Lobby", tg: ["AUFGABEN", "COSMETICS", "EVENTS"],
+            st: "Rette die Ölplattform!",
+            d: "Erkunde die Lobby und erledige wöchentliche Aufgaben für mehr Aurelis oder prahle mit deinen Cosmetics!"
+        }
+    ];
+
+    let idx = 0, paused = false;
+    const icons = {
+        p: `<svg class="play-pause-icon" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`,
+        s: `<svg class="play-pause-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`
+    };
+
+    const el = {
+        vis: document.getElementById('visual'),
+        t: document.getElementById('t'),
+        st: document.getElementById('st'),
+        desc: document.getElementById('desc'),
+        tg: document.getElementById('tg'),
+        nav: document.getElementById('nav')
+    };
+
+    const update = () => {
+        const s = slides[idx];
+        el.vis.style.backgroundImage = `url('${s.bg}')`;
+        el.t.textContent = s.t;
+        el.st.textContent = s.st;
+        el.desc.textContent = s.d;
+        el.tg.innerHTML = s.tg.map(t => `<span>${t}</span>`).join('');
+        el.nav.innerHTML = slides.map((_, i) => 
+            `<div class="nav-item" data-i="${i}">${i===idx ? (paused?icons.s:icons.p) : '<div class="dot"></div>'}</div>`
+        ).join('');
+    };
+
+    el.nav.onclick = (e) => {
+        const n = e.target.closest('.nav-item');
+        if (!n) return;
+        const i = parseInt(n.dataset.i);
+        i === idx ? paused = !paused : idx = i;
+        update();
+    };
+
+    setInterval(() => { if(!paused) { idx = (idx + 1) % slides.length; update(); }}, 6000);
+    update();
+</script>
 </body>
 </html>
