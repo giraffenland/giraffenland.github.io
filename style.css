@@ -23,7 +23,7 @@ body {
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
-    padding: 0 8vw;
+    padding: 0 10vw;
     z-index: 999;
     backdrop-filter: blur(0.3rem);
 }
@@ -34,12 +34,13 @@ body {
 }
 
 .navbar a {
+    display: flex;
+    align-items: center;
     padding: 0 1.2rem;
 }
 
 .navbar img {
     width: 2.5rem;
-    height: 2.5rem;
 }
 
 .dc {
@@ -47,17 +48,16 @@ body {
 }
 
 .navbar-text {
-    color: #fff;
     font-size: 0.9rem;
     white-space: nowrap;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 30rem) {
     html {
         font-size: 13px;
     }
 	.navbar a {
-    padding: 0 0.5rem;
+    padding: 0 1vw;
 }
 	.navbar-text {
 	display: none;

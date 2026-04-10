@@ -3,105 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Team | Giraw</title>
+    <title>Team | Giraw</title>
     <link rel="shortcut icon" href="icon.webp">
     <link rel="stylesheet" href="style.css">
-<style>
-    body {
-        background: url('0.avif') fixed center/cover;
-        min-height: 100vh;
-    }
+    <style>
+        :root {
+            --clr-gott: #f5bd25;
+            --clr-vize: #907575;
+            --clr-mod: #de995c;
+            --clr-cartist: #992d22;
+            --clr-artist: #aa3b3b;
+            --card-bg: rgba(0, 0, 0, 0.3);
+            --card-radius: 0.9375rem;
+        }
 
-    .header-content {
-        text-align: center;
-        margin: 6.25rem 0 1.875rem;
-    }
-	
-	.card-content {
-  text-align: left;
-	}
+        body {
+            background: url('0.avif') fixed center/cover;
+            min-height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-        padding: 1.9rem;
-        max-width: 99.375rem;
-        margin: 0 auto;
-        line-height: 1.6;
-    }
+        .header-content {
+            text-align: center;
+            margin: 6.25rem 0 1.875rem;
+        }
 
-    .card {
-        display: flex;
-        align-items: center;
-        gap: 1.25rem;
-        padding: 2rem;
-        border: 0.125rem solid #fff;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 0.9375rem;
-    }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            padding: 1.9rem;
+            max-width: 99.375rem;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
 
-    .card-img {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 50%;
-        object-fit: cover;
-        flex-shrink: 0;
-    }
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 2rem;
+            border: 0.125rem solid #fff;
+            background: var(--card-bg);
+            border-radius: var(--card-radius);
+        }
 
-    .card-header {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 0.9375rem;
-        margin-bottom: 0.625rem;
-    }
+        .card-content {
+            flex: 1;
+        }
 
-    .name-label {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+        .card-content p {
+            text-align: left;
+            margin: 0;
+        }
 
-    .badge {
-        display: inline-flex;
-        align-items: center;
-        padding: 0.125rem 0.75rem;
-        border-radius: 1.875rem;
-        font-size: 0.9rem;
-        font-weight: bold;
-        white-space: nowrap;
-        text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.7);
-        height: 1.5rem;
-    }
+        .card-img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
 
-    .badge-icon {
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
-        transition: transform 0.2s;
-    }
+        .card-header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.9375rem;
+            margin-bottom: 0.625rem;
+        }
 
-    .badge-icon:hover { transform: scale(1.2); }
+        .name-label {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-    .bg-gott { background: #f5bd25; }
-    .bg-vize { background: #907575; }
-    .bg-mod { background: #de995c; }
-    .bg-cartist { background: #992d22; }
-    .bg-artist { background: #aa3b3b; }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.125rem 0.75rem;
+            border-radius: 1.875rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            white-space: nowrap;
+            text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.7);
+            height: 1.5rem;
+        }
 
-    @media (max-width: 62.5rem) {
-        .grid { grid-template-columns: 1fr; max-width: 37.5rem; }
-        .card { flex-direction: column; padding: 1.3rem; }
-        .card-header { justify-content: center; }
-		
-    }
-	@media (max-width: 40rem) {
-	    .grid {
-        padding: 0.5rem;
-	}
-</style>
+        .badge-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 0.0625rem solid rgba(255, 255, 255, 0.5);
+            transition: transform 0.2s;
+        }
+
+        .badge-icon:hover { transform: scale(1.2); }
+
+        .bg-gott { background: var(--clr-gott); }
+        .bg-vize { background: var(--clr-vize); }
+        .bg-mod { background: var(--clr-mod); }
+        .bg-cartist { background: var(--clr-cartist); }
+        .bg-artist { background: var(--clr-artist); }
+
+        footer { text-align: center; padding: 20px 0 40px; }
+
+        @media (max-width: 62.5rem) {
+            .grid { grid-template-columns: 1fr; max-width: 37.5rem; }
+            .card { flex-direction: column; padding: 1.5rem; text-align: center; }
+            .card-header { justify-content: center; }
+            .card-content p { text-align: left; }
+        }
+
+        @media (max-width: 40rem) {
+            .grid { padding: 0.5rem; }
+        }
+    </style>
 </head>
 <body>
 
@@ -135,7 +154,7 @@
         </article>
 
         <article class="card">
-            <img src="img/Hima.webp" class="card-img" alt="trghv">
+            <img src="img/Hima.webp" class="card-img" alt="trghv" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">trghv</span>
@@ -145,20 +164,20 @@
             </div>
         </article>
 
-		<article class="card">
-			<img src="img/Ender.webp" class="card-img" alt="Ender">
-			<div class="card-content">
-				<div class="card-header">
-					<span class="name-label">Ender</span>
-					<span class="badge bg-vize">Giraffenvize</span>
-					<a href="https://www.instagram.com/enderfliege/" target="_blank"><img src="link.webp" class="badge-icon" alt="Link"></a>
-				</div>
-			<p>Ich bin hauptsächlich für die Redstone- und Commandblocktechnik verantwortlich und kümmere mich drum, dass den Spielern ein wundervolles Erlebnis geboten wird. Meine Freunde würden mich vermutlich als den ruhigen Nerd aus der Gruppe bezeichnen.</p>
-			</div>
-		</article>
+        <article class="card">
+            <img src="img/Ender.webp" class="card-img" alt="Ender" loading="lazy">
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="name-label">Ender</span>
+                    <span class="badge bg-vize">Giraffenvize</span>
+                    <a href="https://www.instagram.com/enderfliege/" target="_blank"><img src="link.webp" class="badge-icon" alt="Link"></a>
+                </div>
+                <p>Ich bin hauptsächlich für die Redstone- und Commandblocktechnik verantwortlich und kümmere mich drum, dass den Spielern ein wundervolles Erlebnis geboten wird. Meine Freunde würden mich vermutlich als den ruhigen Nerd aus der Gruppe bezeichnen.</p>
+            </div>
+        </article>
 
         <article class="card">
-            <img src="img/Evyhll.webp" class="card-img" alt="Evyhll">
+            <img src="img/Evyhll.webp" class="card-img" alt="Evyhll" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">Evyhll</span>
@@ -168,8 +187,8 @@
             </div>
         </article>
 
-		<article class="card">
-            <img src="img/Flyx.webp" class="card-img" alt="Flyx">
+        <article class="card">
+            <img src="img/Flyx.webp" class="card-img" alt="Flyx" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">Flyx</span>
@@ -180,7 +199,7 @@
         </article>
 
         <article class="card">
-            <img src="img/Greey1.webp" class="card-img" alt="Greey1">
+            <img src="img/Greey1.webp" class="card-img" alt="Greey1" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">Greey1</span>
@@ -191,7 +210,7 @@
         </article>
 
         <article class="card">
-            <img src="img/Axo.webp" class="card-img" alt="Axo">
+            <img src="img/Axo.webp" class="card-img" alt="Axo" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">einfach_Axo</span>
@@ -202,7 +221,7 @@
         </article>
 
         <article class="card">
-            <img src="img/Dampfnudel.webp" class="card-img" alt="Dampfnudel">
+            <img src="img/Dampfnudel.webp" class="card-img" alt="Dampfnudel" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">dampfnudel</span>
@@ -213,8 +232,8 @@
             </div>
         </article>
 
-		<article class="card">
-            <img src="img/joerdi.webp" class="card-img" alt="joerdi">
+        <article class="card">
+            <img src="img/joerdi.webp" class="card-img" alt="joerdi" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">joerdi</span>
@@ -225,7 +244,7 @@
         </article>
 
         <article class="card">
-            <img src="img/Mattis.webp" class="card-img" alt="Mattis">
+            <img src="img/Mattis.webp" class="card-img" alt="Mattis" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">Mattis</span>
@@ -235,8 +254,8 @@
             </div>
         </article>
 
-		<article class="card">
-            <img src="img/tt.webp" class="card-img" alt="tiemturnep">
+        <article class="card">
+            <img src="img/tt.webp" class="card-img" alt="tiemturnep" loading="lazy">
             <div class="card-content">
                 <div class="card-header">
                     <span class="name-label">tiemturnep</span>
@@ -247,7 +266,7 @@
         </article>
     </main>
 
-    <footer style="text-align: center; padding: 20px 0 40px;">
+    <footer>
         <h3>Wir danken allen vorherigen Teammitgliedern für ihre Beiträge.</h3>
     </footer>
 
